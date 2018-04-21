@@ -40,7 +40,6 @@
 
 ### To run the application - local development build
 ```
-$ npm run build
-$ node server.js ==> to run local server.
+$ npm start ==> to run local server.
 $ open app at http://localhost:3000
 ```
