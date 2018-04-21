@@ -1,0 +1,23 @@
+{
+    "name": "kmitl-sci-store",
+    "version": "1.0.0",
+    "description": "Store's Faculty of Science, KMITL",
+    "main": "index.html",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chalee-krv/kmitl-sci-store.git"
+    },
+    "keywords": [
+        "KSS"
+    ],
+    "author": "Chalee",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "express": "^4.16.3"
+    },
+    "devDependencies": {}
+}

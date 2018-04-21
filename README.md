@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+# KMITL Science Store
 
-You can use the [editor on GitHub](https://github.com/chalee-krv/kmitl-sci-store/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Technology
+>- NodeJS
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### Application Directory Sturcture
 ```
+.
+├──[+] node_modules
+├──[-] website
+|   ├──[+] bower_components
+|   ├──[+] libs
+|   ├──[-] services
+|   |   ├──[+] api
+|   ├──[-] src
+|   |   ├──[+] css
+|   |   ├──[+] fonts
+|   |   ├──[+] images
+|   |   └──[+] js
+|   ├── import.html <imports html files>
+|   └── index.html
+├── .eslintrc.json
+├── .gitignore
+├── _config.yml
+├── package.json
+├── readme.md
+└── server.js
+```
+## Configuring Development Environments
+### Prerequisite
+>```
+>npm install -g gulp
+>npm install -g grunt-cli (if your does not have grunt installed)
+>```
+>
+> ####`npm install`
+>- Obtain modules that are required to run
+>- Also run `bower install` to obtain all the bower
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/chalee-krv/kmitl-sci-store/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### To run the application - local development build
+```
+$ npm run build
+$ node server.js ==> to run local server.
+$ open app at http://localhost:3000
+```
